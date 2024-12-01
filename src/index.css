@@ -1,0 +1,162 @@
+:root {
+  /* Main colors */
+  --primary-color: #007bff;
+  --secondary-color: #e8a854;
+  --success-color: #28a745;
+  --danger-color: #ff6474;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+
+  --dark-primary-color: #0e0e0e;
+  --dark-secondary-color: #202020;
+  
+  /* Text colors */
+  --text-primary: #212529;
+  --text-secondary: #F2C78F;
+  --text-light: #f8f9fa;
+  --text-dark: #343a40;
+  
+  /* Border colors */
+  --border-secondary: #e8a854;
+  --border-dark: #343a40;
+  
+  /* State colors */
+  --hover-color: #0056b3;
+  --active-color: #004085;
+  --disabled-color: #6c757d;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 200;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Fonts */
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-thin {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* Font Color */
+.font-secondary {
+  color: var(--secondary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background Colors */
+.bg-dark-primary {
+  background-color: var(--dark-primary-color);
+}
+
+#name {
+  color: var(--secondary-color);
+}
+#intro-text {
+  font-size: 1rem;
+}
+
+.border-dark-primary {
+  border-color: var(--dark-primary-color);
+}
+.border-secondary {
+  border-color: var(--secondary-color);
+}
+button.hover-bg-secondary {
+  background: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+}
+button.hover-bg-secondary:hover {
+  font-weight: 1rem;
+  background-size: 100% 100%;
+}
