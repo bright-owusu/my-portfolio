@@ -16,6 +16,9 @@ export default {
         's-1530': '1530px',
         's-1540': '1540px' // Custom name for larger devices
       },
+      fontSize: {
+        'xxs': '.5rem',
+      }
     },
   },
   plugins: [],

@@ -37,7 +37,7 @@ const Hero = () => {
         />
       </motion.div>
 
-      <div className="s-1220:absolute s-320:items-center s-320:justify-center s-320:mt-28 s-768:mt-48 s-1220:mt-0 s-1540:max-w-3xl s-1530:max-w-3xl s-1450:max-w-3xl s-1350:max-w-2xl s-1220:max-w-2xl top-[40%] left-[40%]">
+      <div className="s-1220:absolute s-320:items-center s-320:justify-center s-320:mt-28 s-768:mt-48 s-1036:mt-40 s-1220:mt-0 s-1540:max-w-3xl s-1530:max-w-3xl s-1450:max-w-3xl s-1350:max-w-2xl s-1220:max-w-2xl top-[40%] left-[40%]">
         {/* Name and Titles */}
         <motion.div
           className="text-left space-y-2"
@@ -47,11 +47,11 @@ const Hero = () => {
         >
           <div
             id="name"
-            className="righteous-regular tracking-wider text-6xl s-500:text-4xl s-740:text-6xl font-bold s-320:text-center s-1220:text-justify s-1220:px-0"
+            className="righteous-regular tracking-wider text-6xl s-320:text-3xl s-500:text-4xl s-740:text-6xl font-bold s-320:text-center s-1220:text-left s-1220:px-0"
           >
             Bright Owusu
           </div>
-          <div className="montserrat-bold tracking-wider text-sm s-500:text-xs text-gray-300 s-320:text-center s-1036:px-60 s-1220:text-justify s-1220:px-0">
+          <div className="montserrat-bold tracking-wider text-sm s-320:text-xxs s-500:text-xs text-gray-300 s-320:text-center s-1036:px-60 s-1220:text-left s-1220:px-0">
             DevOps Engineer | Cloud Enthusiast | AWS Certified Cloud
             Practitioner
           </div>
@@ -65,12 +65,12 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <div className="mx-auto s-320:text-xs s-320:px-3 s-500:text-sm s-500:px-3 s-740:px-28 s-768:px-28 s-1024:px-60 s-1036:px-60 text-justify s-1220:px-0">
+          <div className="mx-auto s-320:text-xs s-320:px-3 s-500:text-sm s-500:px-3 s-740:px-28 s-768:px-28 s-1024:px-60 s-1036:px-60 s-1220:px-0">
             A passionate DevOps Engineer and software enthusiast with over six
             years of experience in oil and gas operations and over two years in
             DevOps and Cloud Computing.
           </div>
-          <div className="mx-auto s-320:text-xs s-320:px-3 s-500:text-sm s-500:px-3 s-740:px-28 s-768:px-28 s-1024:px-60 s-1036:px-60 text-justify s-1220:px-0">
+          <div className="mx-auto s-320:text-xs s-320:px-3 s-500:text-sm s-500:px-3 s-740:px-28 s-768:px-28 s-1024:px-60 s-1036:px-60 s-1220:px-0">
             My journey from the oil and gas industry to the world of DevOps and
             Cloud Computing reflects my love for innovation and problem-solving.
             I thrive at the intercession of cutting-edge technology and creative
