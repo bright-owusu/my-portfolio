@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import bannerImage from "../assets/banner-img.png";
-import profileImage from "../assets/profile-img.jpg";
+import profileImage from "../assets/profile-img.webp";
 
 const Hero = () => {
   return (
