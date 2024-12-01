@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import Hero from "./components/Hero";
 
 function App() {
@@ -21,11 +21,19 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
   return (
-    <div className="absolute w-full h-full text-white">
-      <Header />
-      <Hero />
-      <div className="absolute text-white">Window size: {windowSize.width} x {windowSize.height}</div> 
+    <div className="h-screen w-full flex text-white bg-dark-primary">
+      {/* Sidebar */}
+      <Sidebar />
+
+      {/* Main Content */}
+      <main className="flex-none w-full s-1280:w-4/5 text-black overflow-y-auto">
+        <div className="fixed z-20 top-0 text-white bg-black">Window size: {windowSize.width} x {windowSize.height}</div>
+        <Hero />
+        {/* <Hero /> */}
+        {/* ... */}
+      </main>
     </div>
   );
 }
