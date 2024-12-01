@@ -37,7 +37,7 @@ const Hero = () => {
         />
       </motion.div>
 
-      <div className="s-1220:absolute s-320:items-center s-320:justify-center s-320:mt-28 s-768:mt-48 s-1036:mt-40 s-1220:mt-0 s-1540:max-w-3xl s-1530:max-w-3xl s-1450:max-w-3xl s-1350:max-w-2xl s-1220:max-w-2xl top-[40%] left-[40%]">
+      <div className="s-1220:absolute s-320:items-center s-320:justify-center s-320:mt-36 s-768:mt-48 s-1036:mt-40 s-1220:mt-0 s-1540:max-w-3xl s-1530:max-w-3xl s-1450:max-w-3xl s-1350:max-w-2xl s-1220:max-w-2xl top-[40%] left-[40%]">
         {/* Name and Titles */}
         <motion.div
           className="text-left space-y-2"
