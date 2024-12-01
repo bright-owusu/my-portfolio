@@ -25,7 +25,7 @@ const Hero = () => {
 
       {/* Profile Picture (Overlapping Banner) */}
       <motion.div
-        className="absolute transform -translate-y-[-50%] s-320:top-[10%] s-740:left-[40%] s-768:left-[35%] s-740:top-[13%] s-768:top-[13%] s-1024:left-[40%] s-1024:top-[13%] s-1036:left-[40%] s-1036:top-[13%] s-1220:left-[5%] s-1350:left-[8%] s-1450:left-[10%] s-1530:left-[8%] s-1540:left-[10%] top-[20%] lg:top-[20%] rounded-full overflow-hidden w-36 s-768:h-72 s-768:w-auto s-1220:h-3/4 border-8 border-dark-primary"
+        className="absolute transform -translate-y-[-50%] s-320:top-[10%] s-740:left-[40%] s-768:left-[35%] s-740:top-[13%] s-768:top-[13%] s-1024:left-[40%] s-1024:top-[13%] s-1036:left-[40%] s-1036:top-[13%] s-1220:left-[5%] s-1350:left-[8%] s-1450:left-[10%] s-1530:left-[8%] s-1540:left-[10%] top-[20%] lg:top-[20%] rounded-full overflow-hidden w-36 s-768:h-72 s-768:w-auto s-1220:h-3/4 ipad-pro-12.9:h-3/4 ipad-pro-12.9:w-auto border-8 border-dark-primary"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}

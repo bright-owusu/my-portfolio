@@ -4,17 +4,20 @@ export default {
   theme: {
     extend: {
       screens: {
-        's-320': '320px',      // Smallest breakpoint
-        's-500': '500px',      // Smallest breakpoint
-        's-740': '740px',  // Custom name for small devices
-        's-768': '768px',  // Custom name for small devices
-        's-1024': '1024px',  // Custom name for small devices
-        's-1036': '1036px', // Custom name for medium devices
-        's-1220': '1220px', // Custom name for medium devices
-        's-1350': '1350px', // Custom name for medium devices
-        's-1450': '1450px', // Custom name for larger devices
+        's-320': '320px',      
+        's-500': '500px',      
+        's-740': '740px',  
+        's-768': '768px',  
+        's-1024': '1024px',  
+        's-1036': '1036px', 
+        's-1220': '1220px',
+        's-1350': '1350px', 
+        's-1450': '1450px', 
         's-1530': '1530px',
-        's-1540': '1540px' // Custom name for larger devices
+        's-1540': '1540px', 
+
+        // Specific devices
+        'ipad-pro-12.9': { raw: '(min-width: 1366px) and (min-height: 917px)' },
       },
       fontSize: {
         'xxs': '.5rem',
