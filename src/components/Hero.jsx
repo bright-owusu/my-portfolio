@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="flex flex-wrap s-884:flex-nowrap z-10 justify-center s-884:gap-10 gap-5 s-884:px-10 s-680:px-24 s-320:px-5">
         {/* Profile Picture */}
         <motion.div
-          className="flex-none w-1/3 s-884:h-[600px] s-768:h-[400px] s-320:h-[300px] transform -translate-y-[-50%] rounded-full overflow-hidden border-8 border-dark-blue-prim"
+          className="flex-none w-[45%] s-884:h-[100%] s-320:h-[50%] transform -translate-y-[-50%] rounded-full overflow-hidden border-8 border-dark-blue-prim"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
