@@ -21,7 +21,6 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
   return (
     <div className="h-screen w-full flex text-white bg-dark-primary">
       {/* Sidebar */}
@@ -29,7 +28,10 @@ function App() {
 
       {/* Main Content */}
       <main className="flex-none w-full s-1280:w-4/5 text-black overflow-y-auto">
-        <div className="fixed z-20 top-0 text-white bg-black">Window size: {windowSize.width} x {windowSize.height}</div>
+        <div className="fixed z-20 top-0 right-0 text-white bg-black p-2">
+          Window size: {windowSize.width} x {windowSize.height} {' - '}
+          This website is under development
+        </div>
         <Hero />
         {/* <Hero /> */}
         {/* ... */}

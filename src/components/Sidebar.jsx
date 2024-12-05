@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 
 const Sidebar = () => {
+
   return (
     <aside className="flex-none w-1/5 hidden s-1280:block h-full flex-col p-4 bg-sidebar">
       <h1 className="montserrat-bold text-3xl">Bright</h1>
