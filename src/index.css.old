@@ -1,0 +1,127 @@
+:root {
+  /* Main colors */
+  --primary-color: #007bff;
+  --secondary-color: #e8a854;
+  --success-color: #28a745;
+  --danger-color: #ff6474;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+
+  --dark-primary-color: #0e0e0e;
+  --dark-secondary-color: #202020;
+  --dark-blue-prim: #131328;
+  
+  /* Text colors */
+  --text-primary: #212529;
+  --text-secondary: #F2C78F;
+  --text-light: #f8f9fa;
+  --text-dark: #343a40;
+  
+  /* Border colors */
+  --border-secondary: #e8a854;
+  --border-dark: #343a40;
+  
+  /* State colors */
+  --hover-color: #0056b3;
+  --active-color: #004085;
+  --disabled-color: #6c757d;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 200;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html, */
+body {
+  background-color: var(--dark-primary-color);
+  color: var(--text-light);
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fonts */
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-thin {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.montserrat-md {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* Font Color */
+.font-secondary {
+  color: var(--secondary-color);
+}
+
+/* Background Colors */
+.bg-dark-primary {
+  background-color: var(--dark-primary-color);
+}
+.bg-dark-sec {
+  background-color: var(--dark-secondary-color);
+}
+.bg-dark-blue-prim {
+  background-color: var(--dark-blue-prim);
+}
+.bg-sidebar {
+  background-color: #171830;
+}
+
+#name {
+  color: var(--secondary-color);
+}
+#intro-text {
+  font-size: 1rem;
+}
+/* #profile-pic {
+  height: 600px;
+} */
+
+.border-dark-blue-prim {
+  border-color: var(--dark-blue-prim);
+}
+.border-secondary {
+  border-color: var(--secondary-color);
+}
+button.hover-bg-secondary {
+  background: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+}
+button.hover-bg-secondary:hover {
+  font-weight: 1rem;
+  background-size: 100% 100%;
+}

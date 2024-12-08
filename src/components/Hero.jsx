@@ -1,100 +1,95 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bannerImage from "../assets/banner-img.png";
-import profileImage from "../assets/profile-img.webp";
+import profileImg from "../assets/images/profile-img.webp";
+import avatar from "../assets/images/avatar.jpg";
+
+import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="relative flex flex-col h-screen w-full text-white justify-center text-center bg-dark-blue-prim"
-    >
-      {/* Banner Image */}
-      <motion.div
-        className="absolute top-0 z-0 w-full h-40"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <img
-          src={bannerImage}
-          alt="Hero Banner"
-          className="object-cover w-full h-full"
-        />
-      </motion.div>
-
-      <div className="flex flex-wrap s-884:flex-nowrap z-10 justify-center s-884:gap-10 gap-5 s-884:px-10 s-680:px-24 s-320:px-5">
-        {/* Profile Picture */}
-        <motion.div
-          className="flex-none w-[45%] s-884:h-[100%] s-320:h-[50%] transform -translate-y-[-50%] rounded-full overflow-hidden border-8 border-dark-blue-prim"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-        >
-          <img
-            src={profileImage}
-            alt="Profile"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-
-        <div className="flex flex-col gap-4 justify-center">
-          {/* Name and Titles */}
-          <motion.div
-            className="s-884:text-left space-y-2"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
-          >
-            <div
-              id="name"
-              className="righteous-regular tracking-wider s-972:text-6xl s-900:text-5xl s-740:text-4xl s-320:text-4xl"
+    <section id="home" className="pt-28 lg:pt-36">
+      <div className="container lg:grid lg:grid-cols-2 lg:gap-10 place-items-center">
+        <div>
+          <div className="flex items-center gap-3 lg:hidden">
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
             >
-              Bright Owusu
-            </div>
-            <div className="montserrat-bold tracking-wider s-740:text-sm s-320:text-xs text-gray-300">
-              DevOps Engineer | Cloud Enthusiast | AWS Certified Cloud
-              Practitioner
-            </div>
-          </motion.div>
+              <figure className="img-box w-9 h-9 rounded-lg">
+                <img
+                  src={avatar}
+                  width={40}
+                  height={40}
+                  alt="Bright Owusu portrait"
+                  className=""
+                />
+              </figure>
+            </motion.div>
+            
 
-          {/* Intro Text */}
-          <motion.div
-            id="intro-text"
-            className="montserrat-thin tracking-wider text-left space-y-5"
-            initial={{ opacity: 0, y: 30 }}
+            <motion.div 
+              className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              <span className="relative w-2 h-2 rounded-full bg-emerald-400">
+                <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
+              </span>
+              <h1>Bright Owusu</h1>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            className="righteous-regular tracking-wider text-sky-400 text-[4rem] hidden lg:block"
+            initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
+            transition={{ duration: 1, delay: 0.5 }}
           >
-            <div className="leading-normal s-320:text-sm">
-              A passionate DevOps Engineer and software enthusiast with over six
-              years of experience in oil and gas operations and over two years
-              in DevOps and Cloud Computing.
-            </div>
-            <div className="leading-normal s-320:text-sm">
-              My journey from the oil and gas industry to the world of DevOps
-              and Cloud Computing reflects my love for innovation and
-              problem-solving. I thrive at the intercession of cutting-edge
-              technology and creative solutions, leveraging tools like Docker,
-              Kubernetes, and Terraform to build impacful software systems.
-            </div>
+            Bright Owusu
           </motion.div>
 
-          {/* Buttons */}
-          <motion.div
-            className="flex montserrat-bold text-xs font-secondary tracking-wider space-x-4 mt-2 s-320:justify-center s-1220:justify-start"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
+          <motion.div 
+            className="max-w-max text-[3rem] leading-tight font-semibold lg:text-[3rem] md:max-w-[30ch] sm:max-w-[20ch] lg:max-w-[19ch] mb-8 lg:mb-10"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
           >
-            <button className="px-6 py-2 border border-secondary rounded-lg hover-bg-secondary hover:text-black transition">
-              View Resume
-            </button>
-            <button className="px-6 py-2 border border-secondary rounded-lg hover-bg-secondary hover:text-black transition">
-              Download Resume
-            </button>
+            DevOps Engineer | Cloud Enthusiast | AWS Certified Cloud
+            Practitioner
+          </motion.div>
+
+          <motion.div 
+            className="flex items-center gap-3"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <ButtonPrimary label="Download CV" icon="download" classes="flex" />
+            <ButtonOutline
+              href="#about"
+              label="Scroll Down"
+              icon="arrow_downward"
+              classes="flex"
+            />
           </motion.div>
         </div>
+
+        <motion.div 
+          className="hidden lg:block"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <figure className="w-[85%] max-w-[480px] ml-auto rounded-2xl">
+            <img
+              src={profileImg}
+              alt="Bright Owusu portrait"
+              className="img-cover rounded-full ring-[5px] ring-zinc-50/10"
+            />
+          </figure>
+        </motion.div>
       </div>
     </section>
   );

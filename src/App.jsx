@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Skill from "./components/Skill";
+import Project from "./components/Project";
+import Certification from "./components/Certification";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   // DELETE THIS =======================================================
@@ -25,22 +31,33 @@ function App() {
 
 
   return (
-    <div className="h-screen w-full flex text-white bg-dark-primary">
-      {/* Sidebar */}
-      <Sidebar />
+    // <div className="h-screen w-full flex text-white bg-dark-primary">
+    //   {/* Sidebar */}
+    //   {/* <Sidebar /> */}
 
-      {/* Main Content */}
-      <main className="flex-none w-full s-1280:w-4/5 text-black overflow-y-auto">
-        <Header />
-        <div className="fixed z-20 s-1280:top-0 s-1280:right-0 text-white bg-black p-2">
-          Window size: {windowSize.width} x {windowSize.height} {' - '}
-          This website is under development
-        </div>
+    //   {/* Main Content */}
+    //   <main className="flex-none w-full text-black overflow-y-auto">
+    //     <Header />
+    //     {/* <div className="fixed z-20 s-1280:top-0 s-1280:right-0 top-16 right-0 text-white bg-black p-2">
+    //       Window size: {windowSize.width} x {windowSize.height} {' - '}
+    //       This website is under development
+    //     </div> */}
+    //     {/* <Hero /> */}
+    //   </main>
+    // </div>
+    <>
+      <Header />
+      <main>
         <Hero />
-        {/* <Hero /> */}
-        {/* ... */}
+        <About />
+        <Skill />
+        <Project />
+        <Certification />
+        <Contact />
       </main>
-    </div>
+      <Footer />
+    </>
+    
   );
 }
 
