@@ -4,6 +4,7 @@ import Skill from "./Skill"
 const SkillCard = ({
   imgSrc,
   label,
+  desc,
   classes
 }) => {
   return (
@@ -19,6 +20,7 @@ const SkillCard = ({
 
       <div>
         <h3>{label}</h3>
+        <p className="text-xs text-zinc-500 mt-1">{desc}</p>
       </div>
     </div>
   )
@@ -27,6 +29,7 @@ const SkillCard = ({
 SkillCard.propTypes = {
   imgSrc: propTypes.string.isRequired,
   label: propTypes.string.isRequired,
+  desc: propTypes.string.isRequired,
   classes: propTypes.string
 }
 
