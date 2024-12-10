@@ -14,9 +14,13 @@ const ProjectCard = ({ imgSrc, title, description, tags, link, classes }) => {
 
       <div className="flex items-center justify-between gap-3 p-3">
         <div>
-          <h3 className="title-1 mb-3">
+          <h3 className="title-1 mb-1">
             {title}
           </h3>
+
+          <div className="text-[0.9rem] text-zinc-400 mb-4">
+            {description}
+          </div>
 
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((label, key) => (
