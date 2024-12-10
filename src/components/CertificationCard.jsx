@@ -53,8 +53,8 @@ const CertificationCard = ({
     //   </div>
     // </div>
 
-    <div className={`flex items-center gap-3 ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors group ${classes}`}>
-      <figure className="img-box aspect-square rounded-lg">
+    <div className={`rounded-lg bg-zinc-800 hover:bg-zinc-700/70 transition-colors group ${classes}`}>
+      <figure className="img-box aspect-square rounded-t-lg">
         <img
           src={img || "https://via.placeholder.com/150"}
           alt={name}
@@ -63,7 +63,7 @@ const CertificationCard = ({
         />
       </figure>
 
-      <div>
+      <div className="p-3">
         <h3>{name}</h3>
         <p className="text-[0.8rem] text-zinc-400">{description}</p>
         {status ? (
