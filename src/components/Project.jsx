@@ -1,20 +1,21 @@
 import ProjectCard from "./ProjectCard";
-
+import brytmanagerImg from "../assets/images/brytmanager.png"
+import redundancyCalculatorImg from "../assets/images/redundancyCalculator.png"
 
 const projects = [
   {
-    imgSrc: "",
+    imgSrc: brytmanagerImg,
     title: "Bryt Manager",
     description: "Employee data management app",
     tags: ["Django", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "#",
+    link: "",
   },
   {
-    imgSrc: "",
+    imgSrc: redundancyCalculatorImg,
     title: "Redundancy Calculator",
     description: "Calculate redundancy package employee is due on termination of contract by the company",
     tags: ["Django", "React", "TailwindCSS"],
-    link: "#",
+    link: "",
   },
   // Add more projects as needed
 ];
