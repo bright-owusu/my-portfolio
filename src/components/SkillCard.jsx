@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 
 const SkillCard = ({ imgSrc, label, desc, classes }) => {
   return (
-    <div className={`bg-zinc-50/10 rounded-md flex ${classes}`}>
+    <div className={`bg-zinc-50/10 hover:bg-zinc-50/15 transition-colors rounded-md flex ${classes}`}>
       <figure className="shrink-0 rounded-l-md bg-slate-600 content-center overflow-hidden">
         <img src={imgSrc} width={75} height={75} alt={label} />
       </figure>
