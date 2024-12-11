@@ -5,12 +5,18 @@ import avatar from "../assets/images/avatar.jpg";
 
 import { ButtonPrimary, ButtonOutline } from "./Button";
 
+const heroHeadlines = [
+  "DevOps Engineer",
+  "Cloud Enthusiast",
+  "AWS Certified Cloud Practitioner",
+];
+
 const Hero = () => {
   return (
     <section id="home" className="pt-28 lg:pt-36">
-      <div className="container lg:grid lg:grid-cols-2 lg:gap-10 place-items-center">
+      <div className="container lg:grid lg:grid-cols-2 lg:gap-10 lg:place-items-center">
         <div>
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex items-center gap-3 lg:hidden mb-2">
             <motion.div
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -51,13 +57,23 @@ const Hero = () => {
           </motion.div>
 
           <motion.div 
-            className="max-w-max text-[3rem] leading-tight font-semibold lg:text-[3rem] md:max-w-[30ch] sm:max-w-[20ch] lg:max-w-[19ch] mb-8 lg:mb-10"
+            className="max-w-max leading-tight font-semibold text-[2rem] lg:text-[3rem] mb-8 lg:mb-10"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            DevOps Engineer | Cloud Enthusiast | AWS Certified Cloud
-            Practitioner
+            {
+              heroHeadlines.map((headline, index) => (
+                <div key={index} className="flex lg:mb-1">
+                  <div className="material-symbols-rounded h-10 w-10 text-[1.5rem] lg:text-[2rem] font-bold text-sky-400 animate-pulse mt-[10px] lg:mt-4 pr-3" aria-hidden="true">
+                    chevron_right
+                  </div> 
+                  <div>
+                    {headline}
+                  </div>
+                </div>
+              ))
+            }
           </motion.div>
 
           <motion.div 
